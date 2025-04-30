@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gattiga Tindam</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/Chef.jpg" alt="Logo">
+        </div>
+        <nav id="navbar">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Cart (<span id="cart-count">0</span>)</a>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <button id="toggle-theme">🌓</button>
+            </div>
+        </nav>
+    </header>
+
+    <section id="menu">
+        <h2 style="text-align: center;">Full Menu</h2>
+
+        <div class="menu-category">
+            <h3>Breakfast</h3>
+            <div class="menu-item"><img src="images/Karam_Idli.jpg" alt="Karam Idli">
+                <p>Karam Idli - $5</p><button onclick="addToCart('Karam Idli', 5)">Add to Cart</button>
+            </div>
+            <div class="menu-item"><img src="images/Sambar_Idli.jpg" alt="Sambar Idli">
+                <p>Sambar Idli - $6</p>
+                <button onclick="addToCart('Sambar Idli', 6)">Add to Cart</button>
+            </div>
+            
+            <div class="menu-item"><img src="images/Dosa.jpg" alt="Dosa">
+                <p>Dosa - $5</p>
+                <button onclick="addToCart('Dosa', 5)">Add to Cart</button>
+            </div>
+            
+            <div class="menu-item"><img src="images/Masala_Dosa.jpg" alt="Masala Dosa">
+                <p>Masala Dosa - $6</p>
+                <button onclick="addToCart('Masala Dosa', 6)">Add to Cart</button>
+            </div>
+            
+            <div class="menu-item"><img src="images/Vada.jpg" alt="Vada">
+                <p>Vada - $5</p>
+                <button onclick="addToCart('Vada', 5)">Add to Cart</button>
+            </div>
+            
+            <div class="menu-item"><img src="images/Bonda.jpg" alt="Bonda">
+                <p>Bonda - $5</p>
+                <button onclick="addToCart('Bonda', 5)">Add to Cart</button>
+            </div>
+            
+            <div class="menu-item"><img src="images/Puri.jpg" alt="Puri">
+                <p>Puri - $5</p>
+                <button onclick="addToCart('Puri', 5)">Add to Cart</button>
+            </div>
+            
+            <div class="menu-item"><img src="images/Pongal.jpg" alt="Pongal">
+                <p>Pongal - $5</p>
+                <button onclick="addToCart('Pongal', 5)">Add to Cart</button>
+            </div>
+            
+
+        </div>
+
+        <div class="menu-category">
+            <h3>Biryani & Platters</h3>
+            <div class="menu-item"><img src="images/Chicken Biryani.jpg" alt="Chicken Biryani">
+                <p>Chicken Biryani - $10</p><button onclick="addToCart('Chicken Biryani', 10)">Add to Cart</button>
+            </div>
+            <div class="menu-item"><img src="images/Mutton_Biryani.jpg" alt="Mutton Biryani">
+                <p>Mutton Biryani - $12</p><button onclick="addToCart('Mutton Biryani', 12)">Add to Cart</button>
+            </div>
+            
+            <div class="menu-item"><img src="images/Fish_Biryani.jpg" alt="Fish Biryani">
+                <p>Fish Biryani - $13</p><button onclick="addToCart('Fish Biryani', 13)">Add to Cart</button>
+            </div>
+            
+            <div class="menu-item"><img src="images/Kadai_Biryani.jpg" alt="Kadai Biryani">
+                <p>Kadai Biryani - $10</p><button onclick="addToCart('Kadai Biryani', 10)">Add to Cart</button>
+            </div>
+            
+            <div class="menu-item"><img src="images/Mandi_Platter.jpg" alt="Mandi Platter">
+                <p>Mandi Platter - $12</p><button onclick="addToCart('Mandi Platter', 12)">Add to Cart</button>
+            </div>
+            
+            <div class="menu-item"><img src="images/Egg_Biryani.jpg" alt="Egg Biryani">
+                <p>Egg Biryani - $13</p><button onclick="addToCart('Egg Biryani', 13)">Add to Cart</button>
+            </div>
+            
+            <div class="menu-item"><img src="images/Pot_Biryani.jpg" alt="Kunda Biryani">
+                <p>Kunda Biryani - $10</p><button onclick="addToCart('Kunda Biryani', 10)">Add to Cart</button>
+            </div>
+            
+            <div class="menu-item"><img src="images/Bongu_Biryani.jpg" alt="Bongu Biryani">
+                <p>Bongu Biryani - $12</p><button onclick="addToCart('Bongu Biryani', 12)">Add to Cart</button>
+            </div>
+            
+            <div class="menu-item"><img src="images/Parota_Chicken.jpg" alt="Parota Chicken">
+                <p>Parota Chicken - $13</p><button onclick="addToCart('Parota Chicken', 13)">Add to Cart</button>
+            </div>
+            
+            <div class="menu-item"><img src="images/Chicken Biryani.jpg" alt="Chicken Biryani">
+                <p>Chicken Biryani - $10</p><button onclick="addToCart('Chicken Biryani', 10)">Add to Cart</button>
+            </div>
+            
+        </div>
+
+        <div class="menu-category">
+            <h3>Drinks</h3>
+            <div class="menu-item"><img src="images/Badam Milk.jpg" alt="Badam Milk">
+                <p>Badam Milk - $3</p><button onclick="addToCart('Badam Milk', 3)">Add to Cart</button>
+            </div>    
+            <div class="menu-item"><img src="images/Irani_Chai.jpg" alt="Irani Chai">
+                <p>Irani Chai - $5</p>
+                <button onclick="addToCart('Irani Chai', 5)">Add to Cart</button>
+            </div>
+            
+            <div class="menu-item"><img src="images/lemonade.jpg" alt="Lemonade">
+                <p>Lemonade - $4</p>
+                <button onclick="addToCart('Lemonade', 4)">Add to Cart</button>
+            </div>
+            
+            <div class="menu-item"><img src="images/Jigarthanta.jpg" alt="Jigarthanta">
+                <p>Jigarthanta - $4</p>
+                <button onclick="addToCart('Jigarthanta', 4)">Add to Cart</button>
+            </div>
+            
+        </div>
+
+        <div class="menu-category">
+            <h3>Desserts</h3>
+            <div class="menu-item"><img src="images/Gulab_Jamun.jpg" alt="Gulab Jamun">
+                <p>Gulab Jamun - $4</p><button onclick="addToCart('Gulab Jamun', 4)">Add to Cart</button>
+            </div>
+            <div class="menu-item"><img src="images/Mysor Pak.jpg" alt="Mysore pak">
+                <p>Mysore Pak - $5</p><button onclick="addToCart('Mysore pak', 5)">Add to Cart</button>
+            </div>
+            <div class="menu-item"><img src="images/Rasagulla.jpg" alt="Rasagulla">
+                <p>Rasagulla - $5</p><button onclick="addToCart('Rasagulla', 5)">Add to Cart</button>
+            </div>
+            <div class="menu-item"><img src="images/Jilebi.jpg" alt="Jilebi">
+                <p>Jilebi - $4</p><button onclick="addToCart('Jilebi', 4)">Add to Cart</button>
+            </div>
+            <div class="menu-item"><img src="images/Rasamalai.jpg" alt="Rasamalai">
+                <p>Rasamalai - $5</p><button onclick="addToCart('Rasamalai', 5)">Add to Cart</button>
+            </div>
+            <div class="menu-item"><img src="images/Halwa.jpg" alt="Halwa">
+                <p>Halwa - $6</p><button onclick="addToCart('Halwa', 6)">Add to Cart</button>
+            </div>
+            <div class="menu-item"><img src="images/Putha_Rekulu.jpg" alt="Putha Rekulu">
+                <p>Putha Rekulu - $4</p><button onclick="addToCart('Putha Rekulu', 4)">Add to Cart</button>
+            </div>
+            <div class="menu-item"><img src="images/Kova.jpg" alt="Kova">
+                <p>Kova - $5</p><button onclick="addToCart('Kova', 5)">Add to Cart</button>
+            </div>
+            <div class="menu-item"><img src="images/Misti_Doi.jpg" alt="Misti Doi">
+                <p>Misti Doi - $6</p><button onclick="addToCart('Misti Doi', 6)">Add to Cart</button>
+            </div>
+            <div class="menu-item"><img src="images/Semiya.jpg" alt="Semiya">
+                <p>Semiya - $4</p><button onclick="addToCart('Semiya', 4)">Add to Cart</button>
+            </div>
+            <div class="menu-item"><img src="images/Kulfi.jpg" alt="Kulfi">
+                <p>Kulfi - $5</p><button onclick="addToCart('Kulfi', 5)">Add to Cart</button>
+            </div>
+            <div class="menu-item"><img src="images/Kalakand.jpg" alt="Kalakand">
+                <p>Kalakand - $6</p><button onclick="addToCart('Kalakand', 6)">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="cart-total">0</span></p>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <p>📍 Location: Hyderabad, Telangana, India</p>
+            <p>📞 Phone: +91 0000000000</p>
+            <p>✉️ Email: support@gattigatindam.com</p>
+            <p>© 2025 Burger Heaven | All Rights Reserved</p>
+        </div>
+    </footer>
+    
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
